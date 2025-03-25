@@ -14,9 +14,4 @@ object P01 {
   def lastElement[T](ls: List[T]): T = {
     ls.last
   }
-  
-  def main(args: Array[String]): Unit = {
-    println("\n\nP01\n")
-    println(lastElement(List(1, 1, 2, 3, 5, 8)))
-  }
 }
