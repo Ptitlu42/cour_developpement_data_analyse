@@ -11,5 +11,12 @@ package p99
  */
 object P02 {
     
-  def secondLastElement[T](ls: List[T]): Unit = {}
+  def secondLastElement[T](ls: List[T]): T = {
+    ls.init.last
+  }
+
+  def main(args: Array[String]): Unit = { 
+    println("\n\nP02\n")
+    println(secondLastElement(List(1, 1, 2, 3, 5, 8)))
+  }
 }
