@@ -12,6 +12,7 @@ package p99
 object P02 {
     
   def secondLastElement[T](ls: List[T]): T = {
+    if (ls.isEmpty || ls.tail.isEmpty) throw new NoSuchElementException
     ls.init.last
   }
 }
